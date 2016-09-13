@@ -1,0 +1,5 @@
+src/.DS_Store
+src/XamarinPaintCode/obj/
+src/XamarinPaintCode/bin/
+*.userprefs
+*.user

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="100" id="102" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="18" y="549" width="564" height="32"/>
+                                <constraints>
+                                    <constraint id="109" firstAttribute="height" constant="31"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="110" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                                <rect key="frame" x="20" y="511" width="50" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="111" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                                <rect key="frame" x="90" y="511" width="50" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="114" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect">
+                                <rect key="frame" x="160" y="511" width="50" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <state key="normal" title="Black">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint id="124" firstAttribute="width" constant="50"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0 ms" lineBreakMode="tailTruncation" minimumFontSize="10" id="140" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="18" y="486" width="158" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="144" firstAttribute="width" constant="158"/>
+                                </constraints>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="145">
+                                <rect key="frame" x="218" y="515" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Redraw" lineBreakMode="tailTruncation" minimumFontSize="10" id="146" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="275" y="520.5" width="57.5" height="20.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="106" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="102" secondAttribute="trailing" constant="20"/>
+                            <constraint id="107" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="102" secondAttribute="bottom" constant="20"/>
+                            <constraint id="115" firstItem="110" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="116" firstItem="102" firstAttribute="top" secondItem="110" secondAttribute="bottom" constant="8"/>
+                            <constraint id="117" firstItem="111" firstAttribute="leading" secondItem="110" secondAttribute="trailing" constant="20"/>
+                            <constraint id="118" firstItem="102" firstAttribute="top" secondItem="111" secondAttribute="bottom" constant="8"/>
+                            <constraint id="121" firstItem="102" firstAttribute="top" secondItem="114" secondAttribute="bottom" constant="8"/>
+                            <constraint id="122" firstItem="114" firstAttribute="centerY" secondItem="111" secondAttribute="centerY"/>
+                            <constraint id="130" firstItem="102" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40"/>
+                            <constraint id="133" firstItem="114" firstAttribute="leading" secondItem="111" secondAttribute="trailing" constant="20"/>
+                            <constraint id="135" firstItem="110" firstAttribute="width" secondItem="114" secondAttribute="width"/>
+                            <constraint id="136" firstItem="111" firstAttribute="width" secondItem="114" secondAttribute="width"/>
+                            <constraint id="147" firstItem="145" firstAttribute="leading" secondItem="114" secondAttribute="trailing" constant="8"/>
+                            <constraint id="148" firstItem="wfy-db-euE" firstAttribute="top" secondItem="145" secondAttribute="bottom" constant="54"/>
+                            <constraint id="149" firstItem="146" firstAttribute="leading" secondItem="145" secondAttribute="trailing" constant="8"/>
+                            <constraint id="150" firstItem="wfy-db-euE" firstAttribute="top" secondItem="146" secondAttribute="bottom" constant="59"/>
+                            <constraint id="154" firstItem="140" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18"/>
+                            <constraint id="155" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="140" secondAttribute="bottom" constant="93"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="YellowButton" destination="110" id="name-outlet-110"/>
+                        <outlet property="RedButton" destination="111" id="name-outlet-111"/>
+                        <outlet property="BlackButton" destination="114" id="name-outlet-114"/>
+                        <outlet property="SizeSlider" destination="102" id="name-outlet-102"/>
+                        <outlet property="LastActionTimeLabel" destination="140" id="name-outlet-140"/>
+                        <outlet property="RedrawSwitch" destination="145" id="name-outlet-145"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
